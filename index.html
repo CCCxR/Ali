@@ -6,307 +6,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <style>
-        html {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .main {
-            width: 100%;
-            height: 100%;
-            background: url(./img/background.png);
-            background-size: cover;
-        }
-
-        .card-wrap {
-            display: inline-block;
-            width: 100%;
-            height: 85%;
-            position: relative;
-        }
-
-        /* 发牌 */
-        .btn-start {
-            z-index: 101;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-        }
-
-        /* ························································· */
-        /* 翻转 */
-        .flip-container {
-            width: 14.29%;
-            height: 25%;
-            position: absolute;
-            display: inline-block;
-            /* border: 1px solid #aaa; */
-            -webkit-perspective: 500;
-            -moz-perspective: 500;
-            -ms-perspective: 500;
-            perspective: 500;
-            -ms-transform: perspective(500px);
-            -moz-transform: perspective(500px);
-            /*重要*/
-            transform-style: preserve-3d;
-            /*重要*/
-            top: 50%;
-            left: 50%;
-            /* padding: 20px; */
-        }
-
-        .on-center {
-            transform: translate(-50%, -50%);
-        }
-
-        .flipper {
-            position: relative;
-            transition: 0.6s;
-            transform-style: preserve-3d;
-            width: 80%;
-            height: 90%;
-            margin: 10% 10% 10% 10%;
-            /*重要*/
-        }
-
-        /* 触发翻转 */
-        .reverse {
-            transform: rotateY(540deg);
-            transition: transform 0.7s linear 0s
-        }
-
-        .reverse-back {
-            transform: rotateY(0deg);
-            transition: transform 0.7s linear 0s
-        }
-
-        .front,
-        .back {
-            position: absolute;
-            left: 0;
-            top: 0;
-            backface-visibility: hidden;
-            /*重要*/
-            width: 100%;
-            height: 100%;
-        }
-
-        .front {
-            transform: rotateY(0deg);
-            z-index: 2;
-            background: url(./img/card.png);
-            background-size: cover;
-        }
-
-        .back {
-            transform: rotateY(-180deg);
-            background: darkgoldenrod;
-        }
-
-        /*·················································*/
-        .display {
-            display: inline-block;
-        }
-
-        .display-none {
-            display: none;
-        }
-
-        .title {
-            text-align: center;
-            height: 7%;
-            font-size: 30px;
-            line-height: 80px;
-        }
-    </style>
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <div class="main">
-        <div class="title">红包墙</div>
-        <div class="btn-start">start</div>
+        <div class="title">
+            <img src="./img/title.png" alt="">
+        </div>
+        <div class="btn-start">
+            <img src="./img/start.png" alt="">
+        </div>
 
         <div class="card-wrap">
 
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 01</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </div>
+
+            <div class="flip-container on-center">
+                <div class="flipper">
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 02</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 03</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 04</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 05</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 06</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 07</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 08</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 09</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 10</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 11</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 12</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 13</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 14</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 15</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 16</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 17</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 18</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 19</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 20</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 21</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 22</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 23</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 24</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 25</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 26</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
             <div class="flip-container on-center">
                 <div class="flipper">
-                    <div class="front">here is content : 27</div>
-                    <div class="back">here is content : BB</div>
-                </div>
-            </div>
-            <div class="flip-container on-center">
-                <div class="flipper">
-                    <div class="front">here is content : 28</div>
-                    <div class="back">here is content : BB</div>
+                    <div class="front">
+                        <div></div>
+                    </div>
+                    <div class="back"></div>
                 </div>
             </div>
 
@@ -320,12 +256,26 @@
         (function () {
             $(document).ready(function () {
 
+                // 獎品隨機
+                var arr = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6,
+                    6
+                ];
+
+                function randomSort(arr) {
+                    arr.sort(function g(a, b) {
+                        return Math.random() > .5 ? -1 : 1;
+                    });
+                    return arr;
+                }
+                randomSort(arr);
+
                 // 发牌
                 var s_width = $(".card-wrap").width();
                 var s_height = $(".card-wrap").height();
                 console.log('s_width :', s_width);
                 console.log('s_height :', s_height);
                 $(".btn-start").click(function () {
+                    $(".card-wrap").removeClass("display-none");
                     $(".btn-start").addClass("display-none");
 
                     var card_x;
@@ -334,12 +284,10 @@
                     console.log('s_width :', s_width);
                     console.log('s_height :', s_height);
                     for (var i = 0; i < 28; i++) {
-                        // console.log(i + 1);
                         card_x = i % 7;
                         card_y = Math.floor(i / 7);
-                        // console.log('card_x :', card_x);
-                        // console.log('card_y :', card_y);
-                        $("body").find(".flip-container").eq(i).addClass('cno' + i);
+                        $("body").find(".flip-container").eq(i).addClass('img' + arr[i]);
+                        $("body").find(".flip-container").eq(i).addClass('cno' + (i + 1));
                         $("body").find(".flip-container").eq(i).animate({
                             left: s_width * card_x / 7 + 'px',
                             top: s_height * card_y / 4 + 1 * i + 'px'
@@ -353,12 +301,6 @@
                     $(this).parent().removeClass('reverse-back');
                     $(this).parent().addClass('reverse');
                 })
-                // $('.back').click(function () {
-                //     $(this).parent().removeClass('reverse');
-                //     $(this).parent().removeClass('reverse-back');
-                //     $(this).parent().addClass('reverse-back');
-                //     // ····························
-                // })
             });
         })();
     </script>

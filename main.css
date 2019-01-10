@@ -162,43 +162,123 @@ body {
     height: 100%;
 }
 
+
+
+
+
 .cno1 .flipper .front div {
-    background: url(./img/字/吉.png);
+    background: url(./img/字/1.png);
     background-size: 100% 100%;
 }
-
 .cno2 .flipper .front div {
     background: url(./img/字/2.png);
     background-size: 100% 100%;
 }
-
-.cno8 .flipper .front div{
-    background: url(./img/字/祥.png);
+.cno3 .flipper .front div {
+    background: url(./img/字/3.png);
     background-size: 100% 100%;
 }
-
+.cno4 .flipper .front div {
+    background: url(./img/字/4.png);
+    background-size: 100% 100%;
+}
+.cno5 .flipper .front div {
+    background: url(./img/字/5.png);
+    background-size: 100% 100%;
+}
+.cno6 .flipper .front div {
+    background: url(./img/字/6.png);
+    background-size: 100% 100%;
+}
+.cno7 .flipper .front div {
+    background: url(./img/字/7.png);
+    background-size: 100% 100%;
+}
+.cno8 .flipper .front div {
+    background: url(./img/字/8.png);
+    background-size: 100% 100%;
+}
 .cno9 .flipper .front div {
     background: url(./img/字/9.png);
     background-size: 100% 100%;
 }
-
-.cno15 .flipper .front div{
-    background: url(./img/字/如.png);
+.cno10 .flipper .front div {
+    background: url(./img/字/10.png);
+    background-size: 100% 100%;
+}
+.cno11 .flipper .front div {
+    background: url(./img/字/11.png);
+    background-size: 100% 100%;
+}
+.cno12 .flipper .front div {
+    background: url(./img/字/12.png);
+    background-size: 100% 100%;
+}
+.cno13 .flipper .front div {
+    background: url(./img/字/13.png);
+    background-size: 100% 100%;
+}
+.cno14 .flipper .front div {
+    background: url(./img/字/14.png);
     background-size: 100% 100%;
 }
 
+.cno15 .flipper .front div {
+    background: url(./img/字/15.png);
+    background-size: 100% 100%;
+}
 .cno16 .flipper .front div {
     background: url(./img/字/16.png);
     background-size: 100% 100%;
 }
-
-.cno22 .flipper .front div{
-    background: url(./img/字/意.png);
+.cno17 .flipper .front div {
+    background: url(./img/字/17.png);
+    background-size: 100% 100%;
+}
+.cno18 .flipper .front div {
+    background: url(./img/字/18.png);
+    background-size: 100% 100%;
+}
+.cno19 .flipper .front div {
+    background: url(./img/字/19.png);
+    background-size: 100% 100%;
+}
+.cno20 .flipper .front div {
+    background: url(./img/字/20.png);
+    background-size: 100% 100%;
+}
+.cno21 .flipper .front div {
+    background: url(./img/字/21.png);
     background-size: 100% 100%;
 }
 
+.cno22 .flipper .front div {
+    background: url(./img/字/22.png);
+    background-size: 100% 100%;
+}
 .cno23 .flipper .front div {
     background: url(./img/字/23.png);
     background-size: 100% 100%;
 }
+.cno24 .flipper .front div {
+    background: url(./img/字/24.png);
+    background-size: 100% 100%;
+}
+.cno25 .flipper .front div {
+    background: url(./img/字/25.png);
+    background-size: 100% 100%;
+}
+.cno26 .flipper .front div {
+    background: url(./img/字/26.png);
+    background-size: 100% 100%;
+}
+.cno27 .flipper .front div {
+    background: url(./img/字/27.png);
+    background-size: 100% 100%;
+}
+.cno28 .flipper .front div {
+    background: url(./img/字/28.png);
+    background-size: 100% 100%;
+}
+
 

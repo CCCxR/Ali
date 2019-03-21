@@ -960,11 +960,17 @@ body {
         margin: auto;
         bottom: -0.906666rem;
         z-index: 3; }
-        .index .section .qrcode img {
+        .index .section .qrcode .qr-img {
           border-radius: 50%;
-          border: 0.13rem solid #007C91;
+          border: 5px solid #699;
           width: 100%;
-          height: auto; }
+          height: 100%;
+          overflow: hidden;
+          background-color: #fff; }
+          .index .section .qrcode .qr-img img {
+            width: 90%;
+            height: 90%;
+            margin: 5%; }
     .index .section-text {
       margin-top: 1.44rem; }
       .index .section-text .title {
@@ -1051,7 +1057,6 @@ body {
       .index .bottom .content {
         display: inline-block;
         vertical-align: middle;
-        font-family: NotoSansCJKsc-Regular;
         font-size: 24px;
         color: #FFFFFF;
         letter-spacing: -0.72px;
@@ -1072,13 +1077,13 @@ body {
             transform: translate(0, -8.5%); }
   .footer {
     width: 100%;
-    height: 2.48rem;
-    line-height: 2.48rem; }
+    line-height: 1.48rem;
+    padding: 0.5rem 0; }
     .footer img {
-      width: 2.66666rem;
-      height: 0.88rem;
-      vertical-align: middle;
-      margin-left: 0.8rem; }
+      margin-left: 0.28rem;
+      width: 8.5rem;
+      height: auto;
+      vertical-align: middle; }
     .footer .text {
       margin-left: 0.8rem;
       text-align: center;
@@ -1086,7 +1091,9 @@ body {
       .footer .text a {
         font-size: 0.42666rem;
         color: #37474F;
-        letter-spacing: 0; } }
+        letter-spacing: 0; }
+      .footer .text a:visited {
+        color: #37474F !important; } }
 
 @media only screen and (min-width: 1000px) and (max-width: 1460px) {
   html {
@@ -1177,10 +1184,16 @@ body {
                   bottom: 46px; }
             html body .primer-landing .main-wrap .content .qr-img {
               border-radius: 50%;
-              border: 5px solid #007C91;
-              margin: 42px 0 12px;
-              width: 140px;
-              height: 140px; }
+              border: 5px solid #699;
+              margin: 40px auto 12px;
+              width: 160px;
+              height: 160px;
+              overflow: hidden;
+              background-color: #fff; }
+              html body .primer-landing .main-wrap .content .qr-img img {
+                width: 90%;
+                height: 90%;
+                margin: 5%; }
             html body .primer-landing .main-wrap .content .title {
               font-size: 27px;
               color: #37474F;
@@ -1220,6 +1233,8 @@ body {
             line-height: 44px;
             margin: 0 0 24px; }
           html body .primer-landing .video-wrap .btn-video {
+            display: inline-block;
+            margin: 0 auto;
             height: 24px;
             font-size: 22px;
             color: #FFFFFF;
@@ -1237,9 +1252,9 @@ body {
         html body .primer-landing .tabbar-wrap {
           height: 93px; }
           html body .primer-landing .tabbar-wrap img {
-            width: 100px;
-            height: 33px;
-            margin: 30px 0 0 60px; }
+            width: 340px;
+            height: auto;
+            margin: 14px 0 0 14px; }
           html body .primer-landing .tabbar-wrap .tabbar-detail {
             text-align: center;
             margin-left: 50px; }
@@ -1248,13 +1263,15 @@ body {
               font-size: 16px;
               color: #37474F;
               letter-spacing: 0; }
+            html body .primer-landing .tabbar-wrap .tabbar-detail a:visited {
+              color: #37474F !important; }
   .content-img1 {
     background: url("../img/scene01.png"); }
   .content-img2 {
     background: url("../img/scene02.png"); }
   .content-img3 {
     background: url("../img/scene03.png"); }
-  .mar-t125 {
+  .mar-t {
     margin-top: 125px; }
   .r-121 {
     right: -121px; }
@@ -1362,10 +1379,16 @@ body {
                   bottom: 64px; }
             html body .primer-landing .main-wrap .content .qr-img {
               border-radius: 50%;
-              border: 5px solid #007C91;
-              margin: 90px 0 12px;
+              border: 5px solid #699;
+              margin: 90px auto 12px;
               width: 200px;
-              height: 200px; }
+              height: 200px;
+              overflow: hidden;
+              background-color: #fff; }
+              html body .primer-landing .main-wrap .content .qr-img img {
+                width: 90%;
+                height: 90%;
+                margin: 5%; }
             html body .primer-landing .main-wrap .content .title {
               font-size: 32px;
               color: #37474F;
@@ -1405,6 +1428,8 @@ body {
             line-height: 44px;
             margin: 0 0 24px; }
           html body .primer-landing .video-wrap .btn-video {
+            display: inline-block;
+            margin: 0 auto;
             height: 24px;
             font-size: 22px;
             color: #FFFFFF;
@@ -1422,23 +1447,26 @@ body {
         html body .primer-landing .tabbar-wrap {
           height: 93px; }
           html body .primer-landing .tabbar-wrap img {
-            width: 100px;
-            height: 33px;
-            margin: 30px 0 0 60px; }
+            width: 340px;
+            height: auto;
+            margin: 14px 0 0 14px; }
           html body .primer-landing .tabbar-wrap .tabbar-detail {
-            line-height: 93px;
-            font-size: 16px;
-            color: #37474F;
-            letter-spacing: 0;
             text-align: center;
             margin-left: 50px; }
+            html body .primer-landing .tabbar-wrap .tabbar-detail a {
+              line-height: 93px;
+              font-size: 16px;
+              color: #37474F;
+              letter-spacing: 0; }
+            html body .primer-landing .tabbar-wrap .tabbar-detail a:visited {
+              color: #37474F !important; }
   .content-img1 {
     background: url("../img/scene01.png"); }
   .content-img2 {
     background: url("../img/scene02.png"); }
   .content-img3 {
     background: url("../img/scene03.png"); }
-  .mar-t215 {
+  .mar-t {
     margin-top: 215px; }
   .r-121 {
     right: -121px; }
